@@ -1,0 +1,26 @@
+{
+  "folders": [
+    { "path": "." }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+    "python.terminal.activateEnvironment": true,
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/.pytest_cache": true
+    }
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run Streamlit App",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "streamlit",
+        "args": ["run", "${workspaceFolder}\\app.py"],
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+}
